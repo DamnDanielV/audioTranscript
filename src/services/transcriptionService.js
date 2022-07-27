@@ -52,6 +52,8 @@ module.exports = class TranscriptionService {
           );
           finalResult = await res3.json();
           if (finalResult.status !== "processing") {
+            console.log('processed')
+            console.log(finalResult)
             const regex = new RegExp(bodyData.word.toUpperCase(), "g");
             resolve({
               text: finalResult.text,

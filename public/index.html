@@ -9,7 +9,59 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
-    <script src="./index.js"></script>
+    <!-- center div -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Transcript audio App</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-4">
+                <p>Go to /upload</p>
+                <!-- <form action="" method="post" enctype="multipart/form-data" class="form" id="form">
+                    <div class="form-group">
+                        <label for="file">File</label>
+                        <input type="file" class="form-control" id="file" name="sampleFile">
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Word</label>
+                        <input type="text" class="form-control" id="word" name="word">
+                    </div>
+                    <button id="button-send" type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <?php if (isset($_FILES['file'])): ?>
+                    <?php if ($_FILES['file']['error'] == 0): ?>
+                        <div class="alert alert-success">
+                            <p>File uploaded successfully</p>
+                        </div>
+                    <?php else: ?>
+                        <div class="alert alert-danger">
+                            <p>Error uploading file</p>
+                        </div>
+                    <?php endif; ?>
+                <?php endif; ?>
+            </div>
+        </div> -->
+    <!-- <div>
+        <h1>Transcript your audio file</h1>
+    </div> -->
+
+    <script src="./index.js">
+        // const $form = document.querySelector('#form');
+        // $form.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     const formData = new FormData($form);
+        //     console.log(formData.get('word'));
+        //     const xhr = new XMLHttpRequest();
+        //     xhr.open('POST', '/upload');
+        //     xhr.send(formData);
+        // });
+    </script>
 </body>
 </html>
