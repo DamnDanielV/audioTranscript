@@ -1,0 +1,1 @@
+{"level":"info","message":"url: /upload method: POST body: {\"word\":\"I\"} header: {\"host\":\"localhost:8000\",\"user-agent\":\"insomnia/2022.4.2\",\"content-type\":\"multipart/form-data; boundary=X-INSOMNIA-BOUNDARY\",\"accept\":\"*/*\",\"content-length\":\"111995\"}","service":"user-service"}
