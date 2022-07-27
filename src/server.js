@@ -1,13 +1,14 @@
 const express = require("express")
+require('dotenv').config()
 const fileUpload = require('express-fileupload');
 const { logMessage, logError } = require("./middlewares/logger");
-require('dotenv').config()
 
 module.exports = class Server {
     constructor () {
     this.app = express()
     this.app.use(fileUpload())
     this.app.use(express.json())
+    this.app.use(express.static('public'))
     this.middlewares()
     this.routes()
     this.errorsMiddlewares()
